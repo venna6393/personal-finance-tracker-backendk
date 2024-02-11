@@ -1,0 +1,38 @@
+
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{    
+"username": "rahul12",
+"password": "rahul@456"
+}
+
+###
+
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{    
+"username": "rahul12",
+"password": "rahul@456"
+}
+
+
+###
+
+GET http://localhost:5000/api/transactions
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsImlhdCI6MTcwNzYxMDE2MiwiZXhwIjoxNzA3NjEzNzYyfQ.yat-KlSS7qcLEUPh4sdAcs7FV27oKTioEwQIncTd6yI
+
+
+###
+
+POST  http://localhost:5000/api/transactions
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsImlhdCI6MTcwNzYxMDE2MiwiZXhwIjoxNzA3NjEzNzYyfQ.yat-KlSS7qcLEUPh4sdAcs7FV27oKTioEwQIncTd6yI
+Content-Type: application/json
+
+{
+"date": "2024-02-12",
+"category": "Utilities",
+"amount": -100.00
+}
+
